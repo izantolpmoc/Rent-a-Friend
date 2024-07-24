@@ -1,3 +1,9 @@
+.section1_container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .image_container {
     max-width: 500px;
 
@@ -6,3 +12,15 @@
     }
 }
 
+.text_container {
+    max-width: 800px;
+    margin: 0 auto;
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
