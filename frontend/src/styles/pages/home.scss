@@ -1,7 +1,8 @@
 .image_container {
     max-width: 500px;
+
+    img {
+        width: 100%;
+    }
 }
 
-img {
-    width: 100%;
-}
