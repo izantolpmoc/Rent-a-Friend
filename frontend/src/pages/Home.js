@@ -1,5 +1,5 @@
 import UnsplashMan from '../assets/images/unsplash_man.jpg'
-import '../../src/styles/pages/home.css'
+import '@styles/pages/home.css'
 
 const Home = () => {
 
