@@ -1,10 +1,12 @@
 import Button from '@components/button/Button'
 import Yuuri from '../assets/images/yuuri.jpg'
 import '@styles/pages/home.scss'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
 
-    const redirectToCalendar = () => console.log("redirection");
+    const navigate = useNavigate();
+    const redirectToCalendar = () => navigate("/Booking");
 
     return (
         <main>
