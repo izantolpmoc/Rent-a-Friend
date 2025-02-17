@@ -1,11 +1,13 @@
 import mongoose from 'mongoose'
-import User from '../models/userModel.js';
+import dotenv from 'dotenv'
+
+dotenv.config();
 
 const connectDB = async () => {
     try {
-        //database Name
-        const databaseName='rentmeproject';
-        const con = await mongoose.connect(`mongodb://127.0.0.1:27017/${databaseName}`);
+        //database connection
+        const con = await mongoose.connect(process.env.MONGO_URI, {dbName: 'rentafriend'});
+        
         console.log(`Database connected : ${con.connection.host}`)
     } catch (error) {
         console.error(`Error: ${error.message}`)
